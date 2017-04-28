@@ -48,22 +48,21 @@
          </ul>
      </ul>
 </ul>
-<ul> Cài đặt git và hg: 
-    <ul> + Cài Git. </ul>
-    <ul> + Cài Mercurial. </ul>
-</ul>
-<ul> Chạy framework Revel:
-    <ul> + Bắt đầu revel: go get github.com/revel/revel. </ul>
-    <ul> + Lấy và xây dựng tool Revel command line.</ul>
-</ul>
+   <ul> Cài đặt git và hg: 
+        <ul> + Cài Git. </ul>
+        <ul> + Cài Mercurial. </ul>
+    </ul>
+    <ul> Chạy framework Revel:
+        <ul> + Bắt đầu revel: go get github.com/revel/revel. </ul>
+        <ul> + Lấy và xây dựng tool Revel command line.</ul>
+    </ul>
 
 ## II. Controller:
-<ul> Revel.Controller là bối cảnh cho 1 request duy nhất và controls.
+<ul> Revel.Controller là bối cảnh cho 1 request duy nhất.
     <li> -	Request gửi đến. </li>
     <li> -	Response phản hồi trong Hmtl, Json, Xml, File. </li>
 </ul>
-<ul> Controller là bất kì loại nào được nhúng vào *revel.Controller như là field/ type đầu tiên </ul>
-<ul> Revel.Controller là bối cảnh của 1 request chứa request và dữ liệu của response. 
+<ul> Controller được nhúng vào *revel.Controller như là 1 trường đầu tiên
     <ul> type MyAppController struct { 
             <ul> *revel.Controller } </ul>
     </ul>
@@ -77,7 +76,8 @@
             <ul> *revel.Controller } </ul>
     </ul>
 </ul>
-<ul> Các thành phần được sử dụng nhiều nhất và các định nghĩa type/ struct cho Controller, Request, P arams and Response. </ul>
+<ul> Revel.Controller là bối cảnh của 1 yêu cầu chứa request và dữ liệu của response. </ul>
+<ul> Các thành phần được sử dụng nhiều nhất và các định nghĩa type/ struct để giúp cho Controller, Request, Params and Response. </ul>
 <ul>- Controller: 
    <ul> type Controller struct { 
             <ul> Name          string  </ul>
@@ -126,7 +126,6 @@
 </ul>
     
 ## III. URL :
-
 ### 1. URL Router:
 <ul> ULR và các Router thường được định nghĩa trong conf/ router và có 3 cột như ví dụ dưới:  
    <ul>     [METHOD]     [URL Pattern]      [Controller.Action] </ul>
@@ -246,5 +245,5 @@
     </ul>
  </ul>
 
-### Tài liệu tham khảo:
+## Tài liệu tham khảo:
 https://revel.github.io/
