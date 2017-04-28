@@ -96,7 +96,7 @@
             <ul> Params     *Params   </ul>            
             <ul> Args       map[string]interface{} </ul>
             <ul> ViewArgs map[string]interface{} </ul>
-            <ul> Validation *Validation  } </ul>          
+            <ul> Validation *Validation } </ul>          
      </ul>  
 </ul>
 <ul>- Request: 
@@ -121,15 +121,16 @@
             <ul>  ContentType string </ul>
             <ul> Headers     http.Header </ul>
             <ul> Cookies     []*http.Cookie </ul>
-            <ul> Out http.ResponseWriter } </ul>
-    </ul>
+            <ul> Out http.ResponseWriter  </ul>
+   <ul> } </ul>
+   </ul>
 </ul>
     
 ## III. URL :
 ### 1. URL Router:
 <ul> ULR và các Router thường được định nghĩa trong conf/ router và có 3 cột như ví dụ dưới:  
    <ul>     [METHOD]     [URL Pattern]      [Controller.Action] </ul>
-   <ul>     GET             /               MySite.Welcome </ul>
+
 </ul>
 
 ### 2. Đường dẫn cố định:
@@ -225,7 +226,7 @@
 </ul>
 <ul> Template Functions (Khuôn mẫu hàm): 
     <ul> - Go cung cấp sẵn một số khung mẫu hàm <ul>
-    <ul> Revel thêm vào một số hàm như:
+    <ul> - Revel thêm vào một số hàm như:
         <li> append: thêm 1 giá trị vào mảng, tạo 1 mảng. </li>
         <li> checkbox: hỗ trợ tạo checkbox trong html. </li>
         <li> date, datetime: định dạng ngày, giờ theo mặc định của ứng dụng. </li>
