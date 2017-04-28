@@ -35,16 +35,17 @@
 
 ### 3. Framework Revel:
 <ul> Revel là một framework của Go, hỗ trợ Go phát triển web. </ul>
-### Cài đặt Revel: 
-<ul> Cài đặt Go: 
-    <ul> - Trước khi sử dụng Revel, cần cài đặt Go. </ul>
-    <ul> - Thiết lập GOPATH: 
-        <ul> + Gopath là nơi mà code của Go được lưu. </ul>
-        <ul> + Thiết lập: 
-             <li> Tạo thư mục: mkdir ~/gocode . </li> 
-             <li> Báo cho Go biết về GOPATH: export GOPATH=~/gocode. </li>
-             <li> Lưu GOPATH để có thể áp dụng cho tất cả phiên bản: echo export GOPATH=$GOPATH >> ~/.bash_profile </li>
-        </ul>
+<ul> Bắt đầu một ứng dụng bằng Revel cần: 
+    <ul> Cài đặt Go: 
+        <ul> - Trước khi sử dụng Revel, cần cài đặt Go. </ul>
+        <ul> - Thiết lập GOPATH: 
+             <ul> + Gopath là nơi mà code của Go được lưu. </ul>
+             <ul> + Thiết lập: 
+                 <li> Tạo thư mục: mkdir ~/gocode . </li> 
+                 <li> Báo cho Go biết về GOPATH: export GOPATH=~/gocode. </li>
+                 <li> Lưu GOPATH để có thể áp dụng cho tất cả phiên bản: echo export GOPATH=$GOPATH >> ~/.bash_profile </li>
+             </ul>
+         </ul>
      </ul>
 </ul>
 <ul> Cài đặt git và hg: 
@@ -213,12 +214,12 @@
 <ul> Render Context:
     <ul> - Revel thực thi mẫu sử dụng dữ liệu ViewArg map[string]interface{}.</ul>
     <ul> - Revel còn cung cấp :
-        <li>	Errors: bản đồ trả về bởi Validation.ErrorMap. </li>
-        <li>	Flash: dữ liệu được chỉ đến theo yêu cầu trước đó. </li>
+        <li>Errors: bản đồ trả về bởi Validation.ErrorMap. </li>
+        <li>Flash: dữ liệu được chỉ đến theo yêu cầu trước đó. </li>
     </ul>
-<ul>Một template có thể bao gồm nhiều template khác:
-    <li>   Template của GO cho phép áp dụng nhiều mẫu template khác. </li>
-    <li>    Ví dụ:
+<ul> Một template có thể bao gồm nhiều template khác:
+    <li>Template của GO cho phép áp dụng nhiều mẫu template khác. </li>
+    <li>Ví dụ:
          <ul> {{ template “header.html” .}} </ul>
     </li>
  </ul>
@@ -245,3 +246,4 @@
     </ul>
  </ul>
 
+### Tài
