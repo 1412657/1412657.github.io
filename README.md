@@ -159,16 +159,18 @@
 ### 6. Tham số yêu cầu và ràng buộc:
 <ul> Revel đã thực hiện chuyển đổi các tham số yêu cầu sang những loại mà Go có thể dễ sử dụng và giảm rủi ro nhất có thể. </ul>
 <ul> Tất cả những tham số yêu cầu được thu thập thành đối tượng Params đơn giản, bao gồm: 
-    <li> - Đường dẫn URL: URL /: tham số đường dẫn cho route  </li>
-    <li> - Truy vấn Vars </li>
-    <li> - Mẫu Vars </li>
-    <li> - Tập tin tải lên </li>
-    <li> - Params hỗn hợp </li>
-    <li> - Đối số hành động </li>
-    <li> - Binder </li>
+    <ul>
+    <li> Đường dẫn URL: URL /: tham số đường dẫn cho route  </li>
+    <li> Truy vấn Vars </li>
+    <li> Mẫu Vars </li>
+    <li> Tập tin tải lên </li>
+    <li> Params hỗn hợp </li>
+    <li> Đối số hành động </li>
+    <li> Binder </li>
+    </ul>
 </ul>
-## IV. Result và Response:
-## IV. Result và Response:
+
+## IV. Request và Response:
 <ul> Hành động trả về revel.Result, giúp xử lí phản hồi HTTP và tuân theo giao diện đơn giản. 
   <ul>  type Result interface { 
      <ul>   Apply(req *Request, resp *Response) } </ul>
@@ -179,8 +181,10 @@
    <ul> - RenderJSON(), RenderXML(): Một ứng dụng có thể gọi RenderJSON, RenderJSONP, RenderXML và truyền qua bất kì kiểu type nào của Go, thường là struct. </ul> 
    <ul> - RenderText(): trả về phản hồi dạng text </ul>
    <ul> - Redirect(): chuyển hướng đến hành động khác hoặc URL.
+           <ul>
            <li> Hàm trợ giúp tạo ra các HTTP chuyển hướng. </li>
            <li> Sử dụng theo 2 cách và đều trả ra 1 mã trạng thái HTTP (HTTP status code) là 302 temporary redirect. </li>
+           </ul>
    </ul>
    <ul>- Chuyển hướng đến hành động không có đối số: 
            <ul> return c.Redirect(Hotels.Settings) </ul>
@@ -228,6 +232,7 @@
 <ul> Template Functions (Khuôn mẫu hàm): 
     <ul> - Go cung cấp sẵn một số khung mẫu hàm </ul>
     <ul> - Revel thêm vào một số hàm như:
+        <ul>
         <li> append: thêm 1 giá trị vào mảng, tạo 1 mảng. </li>
         <li> checkbox: hỗ trợ tạo checkbox trong html. </li>
         <li> date, datetime: định dạng ngày, giờ theo mặc định của ứng dụng. </li>
@@ -245,6 +250,7 @@
          <li>	set: đặt biến trong ngữ cảnh cụ thể. </li>
         <li>	url: trả về reverse route cho Controller.Action </li>
         <li>	hàm tùy chỉnh: ứng dụng có thể đăng kí các hàm tùy chỉnh để sử dụng template. </li>
+        </ul>
     </ul>
  </ul>
 
