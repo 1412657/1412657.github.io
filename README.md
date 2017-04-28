@@ -216,12 +216,13 @@
         <li>Errors: bản đồ trả về bởi Validation.ErrorMap. </li>
         <li>Flash: dữ liệu được chỉ đến theo yêu cầu trước đó. </li>
     </ul>
+</ul>
 <ul> Một template có thể bao gồm nhiều template khác:
     <li>Template của GO cho phép áp dụng nhiều mẫu template khác. </li>
     <li>Ví dụ:
          <ul> {{ template “header.html” .}} </ul>
     </li>
- </ul>
+</ul>
 <ul> Template Functions (Khuôn mẫu hàm): 
     <ul> - Go cung cấp sẵn một số khung mẫu hàm <ul>
     <ul> Revel thêm vào một số hàm như:
