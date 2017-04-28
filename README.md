@@ -168,6 +168,7 @@
     <li> - Binder </li>
 </ul>
 ## IV. Result và Response:
+## IV. Result và Response:
 <ul> Hành động trả về revel.Result, giúp xử lí phản hồi HTTP và tuân theo giao diện đơn giản. 
   <ul>  type Result interface { 
      <ul>   Apply(req *Request, resp *Response) } </ul>
@@ -225,7 +226,7 @@
     </li>
 </ul>
 <ul> Template Functions (Khuôn mẫu hàm): 
-    <ul> - Go cung cấp sẵn một số khung mẫu hàm <ul>
+    <ul> - Go cung cấp sẵn một số khung mẫu hàm </ul>
     <ul> - Revel thêm vào một số hàm như:
         <li> append: thêm 1 giá trị vào mảng, tạo 1 mảng. </li>
         <li> checkbox: hỗ trợ tạo checkbox trong html. </li>
